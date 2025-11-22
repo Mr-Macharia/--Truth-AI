@@ -8,7 +8,8 @@ An intelligent AI agent that helps you verify facts and debunk myths using advan
 - **Intelligent Fact Checking**: Powered by Google Gemini 2.5 Flash for accurate analysis
 - **Conversation Memory**: Remembers previous questions and answers for contextual follow-ups
 - **Concise Responses**: Provides clear, 30-word summaries of complex information
-- **Interactive CLI**: Simple command-line interface for continuous fact-checking sessions
+- **Interactive Web UI**: Beautiful Streamlit interface for easy fact-checking
+- **CLI Support**: Also available as a command-line interface
 
 ## Tech Stack
 
@@ -71,7 +72,22 @@ PERPLEXITY_MODEL=sonar
 
 ## Usage
 
-### Running the Agent
+### Running the Streamlit Web App (Recommended)
+
+```bash
+streamlit run app.py
+```
+
+This will open the app in your default web browser at `http://localhost:8501`
+
+**Features:**
+- Clean, intuitive web interface
+- Conversation history display
+- Example questions in sidebar
+- Session statistics
+- One-click history clearing
+
+### Running the CLI Version
 
 ```bash
 python main.py
@@ -122,9 +138,11 @@ AI Tool Agent/
 │   ├── tasks.py           # Task definitions
 │   ├── tools.py           # Custom tools (Perplexity search, memory)
 │   └── memory.py          # Conversation memory management
-├── main.py                # Main application entry point
+├── app.py                 # Streamlit web application
+├── main.py                # CLI application entry point
 ├── requirements.txt       # Python dependencies
 ├── .env                   # Environment variables (not committed)
+├── .gitignore            # Git ignore rules
 └── README.md             # This file
 ```
 

@@ -68,6 +68,13 @@ PERPLEXITY_MODEL=sonar
 
 ### 4. Run the Agent
 
+**Web Interface (Recommended):**
+```bash
+streamlit run app.py
+```
+Your browser will open to `http://localhost:8501`
+
+**Command Line:**
 ```bash
 python main.py
 ```

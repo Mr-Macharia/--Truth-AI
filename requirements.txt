@@ -4,3 +4,4 @@ langchain-google-genai
 requests
 python-dotenv
 crewai-tools
+streamlit
